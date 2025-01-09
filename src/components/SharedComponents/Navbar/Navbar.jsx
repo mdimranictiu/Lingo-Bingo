@@ -4,7 +4,7 @@ import { RxCross1 } from "react-icons/rx";
 import { IoIosMenu } from "react-icons/io";
 
 const NavBar = () => {
-    const user=true;
+  const user = false;
   //const {user,logOut}= useContext(AuthContext)
   //console.log(user?.email, user?.displayName)
   const [isHovered, setIsHovered] = useState(false);
@@ -16,40 +16,42 @@ const NavBar = () => {
         <Link to="/">Home</Link>
       </li>
       <li>
-    <Link to="/start-learning">Start-learning</Link>
-    </li>
+        <Link to="/start-learning">Start-learning</Link>
+      </li>
+      <li>
+        <Link to="/about-us">About-us</Link>
+      </li>
+
       {user && (
         <>
-         
           <li>
             <Link to="/tutorials">Tutorials</Link>
           </li>
           <li>
             <Link to="/my-profile">My Profile</Link>
           </li>
-          <li>
-            <Link to="/about-us">About-us</Link>
-          </li>
         </>
       )}
     </>
   );
 
-  const handleSignOut=()=>{
+  const handleSignOut = () => {
     logOut()
-    .then(()=>{
-      console.log('Sign out successfully')
-    })
-    .catch((error)=>{
-      console.log(error)
-    })
-  }
+      .then(() => {
+        console.log("Sign out successfully");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   const registerSection = (
     <>
       {user ? (
-        <div className="flex items-center max-sm:items-start gap-6 max-sm:flex-col">
-          <h2 className="text-white text-lg">Welcome,MD IMRAN SHEIKH</h2>
+        <div className="flex items-center max-md:flex-col max-md:items-start max-sm:items-start gap-6 max-sm:flex-col">
+          <h2 className="text-white text-lg max-sm:text-transparent max-md:text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-[#2e6eb6] to-green-500 ">
+            Welcome,MD IMRAN SHEIKH
+          </h2>
           <button
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -63,7 +65,7 @@ const NavBar = () => {
           </button>
           <button
             onClick={handleSignOut}
-            className=" text-white rounded transition duration-300"
+            className=" text-white max-sm:text-transparent max-md:text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-[#2e6eb6] to-green-500  rounded transition duration-300"
           >
             Log out
           </button>
@@ -83,7 +85,7 @@ const NavBar = () => {
         </div>
       )}
     </>
-  )
+  );
   return (
     <div className="navbar  bg-gradient-to-r from-blue-500 to-green-500 sticky top-0 left-0  z-50 shadow">
       <div className="navbar-start">
@@ -94,10 +96,13 @@ const NavBar = () => {
             onClick={() => setMenuOpen(!menuOpen)}
             className=" text-3xl font-bold  text-[white] lg:hidden"
           >
-          <IoIosMenu />
+            <IoIosMenu />
           </div>
         </div>
-       <Link to='/'> <a className="btn btn-ghost text-xl">Lingo-Bingo</a></Link>
+        <Link to="/">
+          {" "}
+          <a className="btn btn-ghost text-xl">Lingo-Bingo</a>
+        </Link>
       </div>
       <div
         className={`fixed top-[64px] left-0 py-10 z-40 w-full  bg-[white] shadow-lg transform transition-transform duration-300 ${
@@ -108,15 +113,19 @@ const NavBar = () => {
           onClick={() => setMenuOpen(false)}
           className="absolute  top-4 right-4 text-2xl"
         >
-         <RxCross1/>
+          <RxCross1 />
         </button>
-        <ul className="menu p-3 text-center text-xl">{links}{ <div className="text-xl p-3 md:hidden">{registerSection}</div>}</ul>
-       
+        <ul className="menu p-3 text-center text-xl">
+          {links}
+          {<div className="text-xl p-3 md:hidden">{registerSection}</div>}
+        </ul>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-2xl">{links}</ul>
       </div>
-      <div className="navbar-end max-sm:hidden max-md:hidden text-2xl">{registerSection}</div>
+      <div className="navbar-end max-sm:hidden max-md:hidden text-2xl">
+        {registerSection}
+      </div>
     </div>
   );
 };
