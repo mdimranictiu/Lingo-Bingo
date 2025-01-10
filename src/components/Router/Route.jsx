@@ -7,6 +7,7 @@ import Register from "../Register/Register";
 import MyProfile from "../MyProfile/MyProfile";
 import UpdateProfile from "../UpdateProfile/UpdateProfile";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import StartLearning from "../StartLearning/StartLearning";
 
    export const router = createBrowserRouter([
         {
@@ -33,6 +34,10 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute";
             {
                 path:'/update-profile',
                 element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+            },
+            {
+                path:'/start-learning',
+                element: <StartLearning></StartLearning>,
             }
           ]
         },
