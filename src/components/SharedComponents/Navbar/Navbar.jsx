@@ -2,11 +2,10 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { RxCross1 } from "react-icons/rx";
 import { IoIosMenu } from "react-icons/io";
+import { AuthContext } from "../../AuthContext/AuthProvider";
 
 const NavBar = () => {
-  const user = false;
-  //const {user,logOut}= useContext(AuthContext)
-  //console.log(user?.email, user?.displayName)
+  const {user,logOut}= useContext(AuthContext)
   const [isHovered, setIsHovered] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -50,7 +49,7 @@ const NavBar = () => {
       {user ? (
         <div className="flex items-center max-md:flex-col max-md:items-start max-sm:items-start gap-6 max-sm:flex-col">
           <h2 className="text-white text-lg max-sm:text-transparent max-md:text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-[#2e6eb6] to-green-500 ">
-            Welcome,MD IMRAN SHEIKH
+            Welcome,{user.displayName}
           </h2>
           <button
             onMouseEnter={() => setIsHovered(true)}
