@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { FaEnvelope, FaLock } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
@@ -11,9 +11,12 @@ import Swal from "sweetalert2";
 
 
 const Login = () => {
+  const location =useLocation();
+  const destination = location.state || '/';
     const navigate= useNavigate();
-    const {loginUser}=useContext(AuthContext)
+    const {loginUser,googleSignIn}=useContext(AuthContext)
     const [eye,setEye]=useState(false)
+    console.log(destination)
     const handleLogin=(e)=>{
         e.preventDefault();
         const form= e.target;
@@ -22,7 +25,7 @@ const Login = () => {
         loginUser(email,password)
         .then((userCredential)=>{
           form.reset()
-           navigate('/')
+           navigate(destination)
         })
         .catch((error)=>{
           Swal.fire({
@@ -33,6 +36,22 @@ const Login = () => {
           
                 });
         })
+    }
+    const googleLogin=()=>{
+      googleSignIn()
+      .then((data)=>{
+        console.log('sign in successfully',data)
+        navigate(destination)
+      })
+      .catch((error)=>{
+                Swal.fire({
+                  icon: "error",
+                  title: "Login Failed",
+                  text: `${error.message}`,
+                  confirmButtonText: 'Try Again',
+          
+                });
+       })
     }
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
@@ -81,7 +100,7 @@ const Login = () => {
           </button>
           <div className="divider">OR</div>
           <div className="mb-3 w-32 mx-auto py-3 flex justify-center text-3xl cursor-pointer">
-          <FcGoogle title="Login with Google"></FcGoogle>
+          <FcGoogle onClick={googleLogin} title="Login with Google"></FcGoogle>
           </div>
         </form>
         <div className="py-10" >

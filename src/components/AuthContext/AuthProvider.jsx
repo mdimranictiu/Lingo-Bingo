@@ -17,7 +17,7 @@ const AuthProvider = ({children}) => {
         return signInWithEmailAndPassword(auth,email,password)
     }
     const googleSignIn=()=>{
-        signInWithPopup(auth,provider)
+       return signInWithPopup(auth,provider)
     }
     useEffect(()=>{
         const unSubscribe= onAuthStateChanged(auth,currentUser=>{

@@ -57,60 +57,65 @@ const Register = () => {
           console.log(user_info)
           createNewuser(email,password)
           .then((userCredential)=>{
-            const user=userCredential.user;
+            const user= userCredential.user;
             form.reset();
             console.log(user)
             updateProfile(user, {
-                displayName: name,
-                photoURL: photoURL,
-            })
-            .then(()=>{
-                Swal.fire({
-                  title: `Hi, ${name} `,
-                  text: "Your Account Created Successfully!",
-                  icon: "success",
-                  showConfirmButton: false,
-                  timer: 1000,
-                });
-                navigate('/')
-              })
-          })
-          .catch((error)=>{
-            Swal.fire({
-              icon: "error",
-              title: "Registration Failed",
-              text: `${error.message}`,
-              confirmButtonText: 'Try Again',
-      
-            });
-          })
-      
-      }
-      const handleGoogleSingIn=()=>{
+             displayName: name,
+             photoURL: photoURL,
+         })
+         .then(()=>{
+           Swal.fire({
+             title: `Hi, ${name} `,
+             text: "Your Account Created Successfully!",
+             icon: "success",
+             showConfirmButton: false,
+             timer: 1000,
+           });
+           navigate('/')
+         })
+        
+        
+         })
+         .catch((error)=>{
+           Swal.fire({
+             icon: "error",
+             title: "Registration Failed",
+             text: `${error.message}`,
+             confirmButtonText: 'Try Again',
+     
+           });
+         })
+     
+       }
+     
+   
+      const handleGoogleSignIn=()=>{
         googleSignIn()
         .then((data)=>{
-            const user=data.user;
-            console.log(user)
-            Swal.fire({
-              title: `Hi, ${user.displayName} `,
-              text: "Your Account Created Successfully!",
-              icon: "success",
-              showConfirmButton: false,
-              timer: 1000,
-            });
-            
-          })
-          navigate('/')
-          .catch((error)=>{
-            Swal.fire({
-              icon: "error",
-              title: "Registration Failed",
-              text: `${error.message}`,
-              confirmButtonText: 'Try Again',
+          const user=data.user;
+          console.log(user)
+          Swal.fire({
+            title: `Hi, ${user.displayName} `,
+            text: "Your Account Created Successfully!",
+            icon: "success",
+            showConfirmButton: false,
+            timer: 1000,
+          });
+          navigate('/');
+        })
+    
+        .catch((error)=>{
+          Swal.fire({
+            icon: "error",
+            title: "Registration Failed",
+            text: `${error.message}`,
+            confirmButtonText: 'Try Again',
+    
+          });
+        })
       
-            });
-          })
-    }
+      }
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md  bg-white shadow-lg rounded-lg p-8">
@@ -177,7 +182,7 @@ const Register = () => {
           </button>
           <div className="divider">OR</div>
           <div className="mb-3 w-32 mx-auto py-3 flex justify-center text-3xl cursor-pointer">
-          <FcGoogle onClick={handleGoogleSingIn} title="Register with Google"></FcGoogle>
+          <FcGoogle onClick={handleGoogleSignIn} title="Register with Google"></FcGoogle>
           </div>
         </form>
         <div className="py-10" >

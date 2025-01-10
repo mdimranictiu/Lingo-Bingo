@@ -4,6 +4,9 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import Home from "../Home/Home";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
+import MyProfile from "../MyProfile/MyProfile";
+import UpdateProfile from "../UpdateProfile/UpdateProfile";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
    export const router = createBrowserRouter([
         {
@@ -22,6 +25,14 @@ import Register from "../Register/Register";
             {
                 path:'/register',
                 element: <Register></Register>
+            },
+            {
+                path:'/my-profile',
+                element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>
+            },
+            {
+                path:'/update-profile',
+                element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
             }
           ]
         },
