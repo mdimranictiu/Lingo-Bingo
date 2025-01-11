@@ -8,6 +8,7 @@ import MyProfile from "../MyProfile/MyProfile";
 import UpdateProfile from "../UpdateProfile/UpdateProfile";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import StartLearning from "../StartLearning/StartLearning";
+import AboutUS from "../AboutUS/AboutUS";
 
    export const router = createBrowserRouter([
         {
@@ -38,6 +39,10 @@ import StartLearning from "../StartLearning/StartLearning";
             {
                 path:'/start-learning',
                 element: <StartLearning></StartLearning>,
+            },
+            {
+                path:'/about-us',
+                element: <AboutUS></AboutUS>
             }
           ]
         },
