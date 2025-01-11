@@ -89,7 +89,7 @@ const Register = () => {
      
        }
      
-   
+   document.title="Register"
       const handleGoogleSignIn=()=>{
         googleSignIn()
         .then((data)=>{

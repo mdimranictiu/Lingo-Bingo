@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { ScrollRestoration, useNavigate } from "react-router-dom";
 
 const StartLearning = () => {
     const navigate=useNavigate()
@@ -13,11 +13,13 @@ const StartLearning = () => {
     navigate('/tutorials')
   }
   const  hanldeLession=(id)=>{
-    console.log('I am click ',id)
+    navigate('/lesson',{state:{lessonId: id}})
   }
-
+document.title="Start Learning"
   return (
     <div>
+              <ScrollRestoration></ScrollRestoration>
+
       <div className="py-10 justify-center bg-gray-100">
         <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 text-center mb-6">
           From the Alphabet to Fluency: Your Learning Path

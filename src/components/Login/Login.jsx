@@ -11,6 +11,7 @@ import Swal from "sweetalert2";
 
 
 const Login = () => {
+  document.title="Login"
   const location =useLocation();
   const [em,setem]=useState('');
   console.log(em)

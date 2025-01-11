@@ -2,6 +2,8 @@ import React from 'react';
 import animationLottie from '../../assets/Animation - 1736568497903.json';
 import Lottie from 'lottie-react';
 import 'animate.css';
+import { Link } from 'react-router-dom';
+
 
 
 const Promotion = () => {
@@ -19,9 +21,9 @@ const Promotion = () => {
                         Super Lingo Bingo
                     </h2>
                     
-                    <button className="bg-white  uppercase  px-6 py-3 rounded-lg  transition duration-300">
+                    <Link to="/start-learning"><button className="bg-white  uppercase  px-6 py-3 rounded-lg  transition duration-300">
                         Try 14 days free
-                    </button>
+                    </button></Link>
                 </div>
             </div>
         </div>

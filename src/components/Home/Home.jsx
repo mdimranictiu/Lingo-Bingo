@@ -7,6 +7,7 @@ import Promotion from '../Promotion/Promotion';
 import Review from '../Review/Review';
 
 const Home = () => {
+    document.title="Home"
     return (
         <>
         <Banner></Banner>

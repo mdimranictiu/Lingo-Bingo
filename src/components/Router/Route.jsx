@@ -10,6 +10,8 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import StartLearning from "../StartLearning/StartLearning";
 import AboutUS from "../AboutUS/AboutUS";
 import ForgotPassword from "../ForgotPassword/ForgotPassword";
+import Lesson from "../Lesson/Lesson";
+import Tutorials from "../Tutorials/Tutorials";
 
    export const router = createBrowserRouter([
         {
@@ -36,6 +38,14 @@ import ForgotPassword from "../ForgotPassword/ForgotPassword";
             {
                 path:'/update-profile',
                 element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+            },
+            {
+                path:'/lesson',
+                element: <PrivateRoute><Lesson></Lesson></PrivateRoute>
+            },
+            {
+                path:'/tutorials',
+                element: <PrivateRoute><Tutorials></Tutorials></PrivateRoute>
             },
             {
                 path:'/start-learning',

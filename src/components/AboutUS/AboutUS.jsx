@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 
 const AboutUS = () => {
+  document.title="About Us"
   const projectList = [
     {
       projectName: "PayMaya",

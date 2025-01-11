@@ -3,7 +3,9 @@ import { AuthContext } from "../AuthContext/AuthProvider";
 import { Link } from "react-router-dom";
 
 const MyProfile = () => {
-    const {user}=useContext(AuthContext)
+  const {user}=useContext(AuthContext)
+
+  document.title=`${user.displayName} Profile`
   return (
     <div className="flex justify-center py-10 min-h-screen bg-gray-100">
     <div className="w-full max-w-2xl bg-white shadow-lg rounded-lg p-8">

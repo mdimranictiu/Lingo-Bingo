@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import Swal from 'sweetalert2';  // Add this import to use Swal
 
 const ForgotPassword = () => {
+    document.title="Forgot Password"
     const location = useLocation();
     const [success, setSuccess] = useState('');
     const prevEmail = location?.state?.email || ""; 
