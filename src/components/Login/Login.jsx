@@ -12,6 +12,8 @@ import Swal from "sweetalert2";
 
 const Login = () => {
   const location =useLocation();
+  const [em,setem]=useState('');
+  console.log(em)
   const destination = location.state || '/';
     const navigate= useNavigate();
     const {loginUser,googleSignIn}=useContext(AuthContext)
@@ -61,7 +63,10 @@ const Login = () => {
           <div className="mb-6 relative">
             <FaEnvelope className="absolute left-3 top-3 text-gray-400" />
             <input
-              type="email"
+              type="email" onChange={(e) =>{
+                e.preventDefault();
+                setem(e.target.value)
+              } }
               placeholder="Email" name="email"
               className="w-full pl-10 border-b-2 border-gray-300 outline-none focus:border-blue-500 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 py-2"
               required
@@ -89,7 +94,7 @@ const Login = () => {
                         )}
           </div>
            <div className="flex justify-end mb-6">
-            <Link to='/forgot-password'><p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500">Forgotten Password?</p>
+            <Link to='/forgot-password' state={{email: em}}><p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500">Forgotten Password?</p>
             </Link>
            </div>
           <button

@@ -9,6 +9,7 @@ import UpdateProfile from "../UpdateProfile/UpdateProfile";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import StartLearning from "../StartLearning/StartLearning";
 import AboutUS from "../AboutUS/AboutUS";
+import ForgotPassword from "../ForgotPassword/ForgotPassword";
 
    export const router = createBrowserRouter([
         {
@@ -43,6 +44,10 @@ import AboutUS from "../AboutUS/AboutUS";
             {
                 path:'/about-us',
                 element: <AboutUS></AboutUS>
+            },
+            {
+                path:'/forgot-password',
+                element: <ForgotPassword></ForgotPassword>
             }
           ]
         },
