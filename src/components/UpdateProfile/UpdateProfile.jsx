@@ -36,7 +36,7 @@ const UpdateProfile = () => {
           showConfirmButton: false,
           timer: 1000,
         });
-        navigate("/");
+        navigate("/my-profile");
       })
       .catch((error) => {
         Swal.fire({

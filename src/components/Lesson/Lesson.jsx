@@ -5,7 +5,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 const Lesson = () => {
   const location = useLocation();
   const lessonId = location?.state?.lessonId;
-  console.log(lessonId, typeof lessonId);
   const navigate = useNavigate();
   const [vocabularies, setVocabularies] = useState(null);
   const [selectedVocab, setselectedVocab] = useState(null);
@@ -31,7 +30,6 @@ const Lesson = () => {
     document.getElementById("my_modal_4").showModal();
   };
 
-  console.log(vocabularies);
   const handleBackToLesson = () => {
     navigate("/start-learning");
   };
@@ -87,7 +85,7 @@ const Lesson = () => {
         </div>
       </div>
       <dialog id="my_modal_4" className="modal  modal-middle">
-        <div className="modal-box max-w-xl bg-gray-200 ">
+        <div className="modal-box max-w-xl p-10 bg-gray-200 ">
           <div className="flex flex-col start">
             <h2 className="text-2xl font-bold mb-4">
               Word: {selectedVocab?.word}

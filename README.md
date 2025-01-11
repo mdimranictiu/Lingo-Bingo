@@ -4,6 +4,7 @@
 The Vocabulary Learning Web Application helps learner to  improve their vocabulary by providing various learning tools and exercises. In this web application a learner can learn three categories of japanise vocabulary. The web is designed to be simple, interactive, and efficient, allowing users to learn and memorize new words in a structured manner. I hope it will useful for beginners.
 
 ## Live URL
+https://lingo-bingo-628fe.web.app/
 
 ## Key Features
 - **Lesson Category**: In this web application there are 10 category of lesson. You can enjoy it one after another.

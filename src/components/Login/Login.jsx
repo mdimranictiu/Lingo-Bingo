@@ -14,12 +14,10 @@ const Login = () => {
   document.title="Login"
   const location =useLocation();
   const [em,setem]=useState('');
-  console.log(em)
   const destination = location.state || '/';
     const navigate= useNavigate();
     const {loginUser,googleSignIn}=useContext(AuthContext)
     const [eye,setEye]=useState(false)
-    console.log(destination)
     const handleLogin=(e)=>{
         e.preventDefault();
         const form= e.target;
