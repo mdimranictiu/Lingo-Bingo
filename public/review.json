@@ -1,0 +1,62 @@
+[
+    {
+        "_id": "643011e0f5a7e52ce1e8fa70",
+        "name": "Alice Brown",
+        "details": "This vocabulary learning app is fantastic! The quizzes are engaging, and I love how the app tracks my progress. Highly recommended for language enthusiasts.",
+        "rating": 5
+    },
+    {
+        "_id": "643011f9f5a7e52ce1e8fa71",
+        "name": "David Miller",
+        "details": "I like the app's clean interface and the variety of exercises. However, I think some features could be more interactive. Still a solid tool for improving vocabulary.",
+        "rating": 4
+    },
+    {
+        "_id": "6430120af5a7e52ce1e8fa72",
+        "name": "Emma Wilson",
+        "details": "The app is decent, but I encountered a few bugs while using it. It has potential, and with some improvements, it could be great.",
+        "rating": 3
+    },
+    {
+        "_id": "64301223f5a7e52ce1e8fa73",
+        "name": "James Taylor",
+        "details": "Amazing app! The daily challenges are a great way to stay consistent. I’ve learned so many new words in just a few weeks.",
+        "rating": 5
+    },
+    {
+        "_id": "6430123af5a7e52ce1e8fa74",
+        "name": "Sophia Anderson",
+        "details": "I love the flashcards feature. It’s such an effective way to memorize words quickly. The app is well-designed and easy to navigate.",
+        "rating": 4
+    },
+    {
+        "_id": "6430124cf5a7e52ce1e8fa75",
+        "name": "Michael Clark",
+        "details": "Good app overall, but I wish there were more free content. The subscription seems a bit pricey for casual learners.",
+        "rating": 3
+    },
+    {
+        "_id": "6430125df5a7e52ce1e8fa76",
+        "name": "Olivia Martinez",
+        "details": "This app has completely transformed the way I learn new words. The gamification aspect makes it so much fun!",
+        "rating": 5
+    },
+    {
+        "_id": "6430126af5a7e52ce1e8fa77",
+        "name": "William Lee",
+        "details": "I enjoy using this app to learn vocabulary, but the notifications can be a bit overwhelming. Overall, a useful resource.",
+        "rating": 4
+    },
+    {
+        "_id": "6430127ff5a7e52ce1e8fa78",
+        "name": "Isabella Harris",
+        "details": "The app is okay, but I wish it had more advanced-level content for someone like me who already has a good vocabulary base.",
+        "rating": 3
+    },
+    {
+        "_id": "6430129af5a7e52ce1e8fa79",
+        "name": "Henry White",
+        "details": "An excellent app for learning new vocabulary! The spaced repetition feature ensures I retain what I learn. Great job!",
+        "rating": 5
+    }
+]
