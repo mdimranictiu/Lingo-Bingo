@@ -2,8 +2,6 @@
 
 📚 **A fun and interactive way to enhance Japanese vocabulary!** 
 
-## 🖼 Screenshot  
-![Lingo-Bingo Screenshot](src/assets/screenshot-1738751614410.png)
 
 
 ## 🚀 Live Demo  
@@ -26,6 +24,8 @@
 Lingo-Bingo is a **vocabulary learning web application** designed to help learners improve their **Japanese vocabulary** through structured lessons, interactive tools, and engaging exercises. It provides an **easy-to-use** and **responsive** platform where beginners can efficiently memorize new words and improve pronunciation.  
 
 ---
+## 🖼 Screenshot  
+![Lingo-Bingo Screenshot](src/assets/screenshot-1738751614410.png)
 
 
 ---
@@ -81,7 +81,7 @@ swiper
 tailwindcss
 vite
 
-## 🛠 Installation & Setup  
+##🛠 Installation & Setup  
 Follow these steps to run the project locally:  
 
 ### 1 Clone the Repository  
