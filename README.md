@@ -1,55 +1,99 @@
-# Lingo-Bingo: A Vocabulary Learning Web Application
+ 🎯 Lingo-Bingo: A Vocabulary Learning Web Application  
 
-## Purpose
-The Vocabulary Learning Web Application helps learner to  improve their vocabulary by providing various learning tools and exercises. In this web application a learner can learn three categories of japanise vocabulary. The web is designed to be simple, interactive, and efficient, allowing users to learn and memorize new words in a structured manner. I hope it will useful for beginners.
+📚 **A fun and interactive way to enhance Japanese vocabulary!**  
 
-## Live URL
-https://lingo-bingo-628fe.web.app/
+## 🚀 Live Demo  
+🔗 **[Lingo-Bingo Live](https://lingo-bingo-628fe.web.app/)**  
 
-## Key Features
-- **Lesson Category**: In this web application there are 10 category of lesson. You can enjoy it one after another.
-- **Pronunciation**: Integrated audio features to help users pronounce words correctly.
-- **Responsive**: The web application is flexible for all types of devices.
-- **Tutorials**: Learners are able to enjoy Video Tutorilas.
-- **Update Profile**: A learner can update his profile.
+---
 
-## Technologies Used
-- HTML
-- Tailwind CSS
-- JavaScript
-- React
+## 📌 Table of Contents  
+- [Overview](#overview)  
+- [Screenshot](#screenshot)  
+- [Key Features](#key-features)  
+- [Technologies Used](#technologies-used)  
+- [Dependencies](#dependencies)  
+- [Installation & Setup](#installation--setup)  
+- [Resources & Links](#resources--links)  
 
-## NPM Packages
-Here is a list of npm packages used in this project:
-- ─ @eslint
-├── @types/react-dom
-├── @types/react
-├── @vitejs/plugin-react
-├── animate.css
-├── aos
-├── autoprefixer
-├── axios@1.7.9
-├── daisyui
-├── eslint-plugin-react-hooks
-├── eslint-plugin-react-refresh
-├── eslint-plugin-react
-├── eslint
-├── firebase
-├── globals
-├── localforage
-├── lottie-react
-├── match-sorter
-├── postcss
-├── react-countup
-├── react-dom
-├── react-icons
-├── react-rating-stars-component
-├── react-responsive-carousel
-├── react-router-dom
-├── react
-├── sort-by
-├── sweetalert2
-├── swiper
-├── tailwindcss
-└── vite
+---
 
+## 📝 Overview  
+Lingo-Bingo is a **vocabulary learning web application** designed to help learners improve their **Japanese vocabulary** through structured lessons, interactive tools, and engaging exercises. It provides an **easy-to-use** and **responsive** platform where beginners can efficiently memorize new words and improve pronunciation.  
+
+---
+
+## 🖼 Screenshot  
+![Lingo-Bingo Screenshot](assets/images/screenshot.png)
+
+---
+
+## ✨ Key Features  
+✅ **Lesson Categories** – 10 structured categories for step-by-step learning.  
+✅ **Pronunciation Support** – Integrated **audio features** to improve word pronunciation.  
+✅ **Responsive Design** – Works on all devices (mobile, tablet, desktop).  
+✅ **Video Tutorials** – Access engaging **video tutorials** for better learning.  
+✅ **Profile Management** – Users can update their **profile** easily.  
+
+---
+
+## 🛠 Technologies Used  
+- **Frontend:** HTML, Tailwind CSS, JavaScript, React  
+- **Build Tool:** Vite  
+
+---
+
+## 📦 Dependencies  
+The project uses the following npm packages:  
+
+```bash
+@eslint
+@types/react-dom
+@types/react
+@vitejs/plugin-react
+animate.css
+aos
+autoprefixer
+axios
+daisyui
+eslint-plugin-react-hooks
+eslint-plugin-react-refresh
+eslint-plugin-react
+eslint
+firebase
+globals
+localforage
+lottie-react
+match-sorter
+postcss
+react-countup
+react-dom
+react-icons
+react-rating-stars-component
+react-responsive-carousel
+react-router-dom
+react
+sort-by
+sweetalert2
+swiper
+tailwindcss
+vite
+
+## 🛠 Installation & Setup  
+Follow these steps to run the project locally:  
+
+### 1 Clone the Repository  
+```bash
+git clone https://github.com/mdimranictiu/Lingo-Bingo.git
+cd lingo-bingo
+### 2 Install Dependencies
+```bash
+npm run dev
+
+ Resources & Links
+🌐 Live Demo
+📖 React Documentation: https://react.dev/
+📖 Tailwind CSS Documentation: https://tailwindcss.com/
+🔥 Firebase: https://firebase.google.com/
+
+📌 Feel free to contribute, report issues, or share your feedback! 🚀
