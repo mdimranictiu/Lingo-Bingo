@@ -81,8 +81,21 @@ tailwindcss
 vite
 ---
 
-## 🛠 Technologies Used  
-- **Frontend:** HTML, Tailwind CSS, JavaScript, React  
-- **Build Tool:** Vite  
+##  Installation & Setup  
+Follow these steps to run the project locally:  
 
+### 1 Clone the Repository  
+```bash
+git clone https://github.com/mdimranictiu/Lingo-Bingo.git
+cd lingo-bingo
+### 2 Install Dependencies
+```bash
+npm run dev
 ---
+ Resources & Links
+🌐 Live Demo
+📖 React Documentation: https://react.dev/
+📖 Tailwind CSS Documentation: https://tailwindcss.com/
+🔥 Firebase: https://firebase.google.com/
+
+📌 Feel free to contribute, report issues, or share your feedback! 🚀
