@@ -88,12 +88,16 @@ Follow these steps to run the project locally:
 ```bash
 git clone https://github.com/mdimranictiu/Lingo-Bingo.git
 cd lingo-bingo
+```bash
 ### 2 Install Dependencies
+npm install
+```bash
+### 3 Start the Development Server
 ```bash
 npm run dev
----
- Resources & Links
-🌐 Live Demo
+```bash
+
+ ### Resources & Links
 📖 React Documentation: https://react.dev/
 📖 Tailwind CSS Documentation: https://tailwindcss.com/
 🔥 Firebase: https://firebase.google.com/
