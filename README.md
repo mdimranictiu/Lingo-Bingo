@@ -48,7 +48,6 @@ Lingo-Bingo is a **vocabulary learning web application** designed to help learne
 ## 📦 Dependencies  
 The project uses the following npm packages:  
 
-```bash
 @eslint
 @types/react-dom
 @types/react
