@@ -88,7 +88,7 @@ Follow these steps to run the project locally:
 ```bash
 git clone https://github.com/mdimranictiu/Lingo-Bingo.git
 cd lingo-bingo
-```bash
+bash'''
 ### 2 Install Dependencies
 npm install
 ```bash
