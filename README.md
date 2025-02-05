@@ -1,6 +1,10 @@
- 🎯 Lingo-Bingo: A Vocabulary Learning Web Application  
+# 🎯 Lingo-Bingo: A Vocabulary Learning Web Application  
 
-📚 **A fun and interactive way to enhance Japanese vocabulary!**  
+📚 **A fun and interactive way to enhance Japanese vocabulary!** 
+
+## 🖼 Screenshot  
+![Lingo-Bingo Screenshot](src/assets/screenshot-1738751614410.png)
+
 
 ## 🚀 Live Demo  
 🔗 **[Lingo-Bingo Live](https://lingo-bingo-628fe.web.app/)**  
@@ -23,8 +27,6 @@ Lingo-Bingo is a **vocabulary learning web application** designed to help learne
 
 ---
 
-## 🖼 Screenshot  
-![Lingo-Bingo Screenshot](src/assets/screenshot-1738751614410.png)
 
 ---
 
