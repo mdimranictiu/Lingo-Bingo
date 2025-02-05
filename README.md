@@ -85,10 +85,10 @@ vite
 Follow these steps to run the project locally:  
 
 ### 1 Clone the Repository  
-```bash
+```
 git clone https://github.com/mdimranictiu/Lingo-Bingo.git
 cd lingo-bingo
-bash'''
+```
 ### 2 Install Dependencies
 npm install
 ```bash
