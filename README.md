@@ -90,12 +90,13 @@ git clone https://github.com/mdimranictiu/Lingo-Bingo.git
 cd lingo-bingo
 ```
 ### 2 Install Dependencies
+```
 npm install
-```bash
+```
 ### 3 Start the Development Server
-```bash
+```
 npm run dev
-```bash
+```
 
  ### Resources & Links
 📖 React Documentation: https://react.dev/
