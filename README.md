@@ -47,7 +47,7 @@ Lingo-Bingo is a **vocabulary learning web application** designed to help learne
 
 ## 📦 Dependencies  
 The project uses the following npm packages:  
-
+```
 @eslint
 @types/react-dom
 @types/react
@@ -79,7 +79,7 @@ sweetalert2
 swiper
 tailwindcss
 vite
----
+```
 
 ##  Installation & Setup  
 Follow these steps to run the project locally:  
@@ -98,7 +98,7 @@ npm install
 npm run dev
 ```
 
- ### Resources & Links
+ ## Resources & Links
 📖 React Documentation: https://react.dev/
 📖 Tailwind CSS Documentation: https://tailwindcss.com/
 🔥 Firebase: https://firebase.google.com/
