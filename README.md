@@ -80,7 +80,7 @@ sweetalert2
 swiper
 tailwindcss
 vite
-
+---
 ##🛠 Installation & Setup  
 Follow these steps to run the project locally:  
 
@@ -91,7 +91,7 @@ cd lingo-bingo
 ### 2 Install Dependencies
 ```bash
 npm run dev
-
+---
  Resources & Links
 🌐 Live Demo
 📖 React Documentation: https://react.dev/
