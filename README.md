@@ -24,7 +24,7 @@ Lingo-Bingo is a **vocabulary learning web application** designed to help learne
 ---
 
 ## 🖼 Screenshot  
-![Lingo-Bingo Screenshot](assets/images/screenshot.png)
+![Lingo-Bingo Screenshot](assets/screenshot-1738751614410.png)
 
 ---
 
