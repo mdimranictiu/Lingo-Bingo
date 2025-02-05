@@ -81,20 +81,9 @@ swiper
 tailwindcss
 vite
 ---
--## Installation & Setup
-Follow these steps to run the project locally:
----
-###1️⃣ Clone the Repository
-git clone https://github.com/mdimranictiu/Lingo-Bingo.git
-cd Lingo-Bingo
-###2️⃣ Install Dependencies
-npm install
-##3️⃣ Start the Development Server
-npm run dev
-The project should now be running on localhost:5173 (or as specified in the terminal).
 
-📚 Resources & Links
-🌐 Live Demo
-📖 React Documentation
-🎨 Tailwind CSS Documentation
-🔥 Firebase
+## 🛠 Technologies Used  
+- **Frontend:** HTML, Tailwind CSS, JavaScript, React  
+- **Build Tool:** Vite  
+
+---
